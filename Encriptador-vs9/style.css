@@ -1,0 +1,221 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    line-height: 1.6; 
+}
+
+/* Estilos del header */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 20px; 
+}
+
+/* Estilos del main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: calc(100vh - 70px); 
+    box-sizing: border-box; 
+}
+
+/* Estilos del contenedor de la caja de texto */
+.contenedorcajatexto {
+    width: 90%;
+    max-width: 800px; 
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Estilos de la caja de texto */
+.cajatexto {
+    width: 100%;
+    height: 250px; 
+    border: 2px solid #555; 
+    background-color: #444; 
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    padding: 15px; 
+    border-radius: 8px;
+    resize: none; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilos del placeholder en la caja de texto */
+.cajatexto::placeholder {
+    color: #888;
+}
+
+/* Estilos de alerta */
+.alerta {
+    display: flex;
+    align-items: center;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.alerta img {
+    margin-right: 10px;
+}
+
+/* Estilos del contenedor de botones */
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Estilos de los botones */
+.btn-encriptar,
+.btn-desencriptar {
+    width: 48%;
+    height: 50px;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.btn-encriptar {
+    background-color: #0a3871;
+    color: #f4f4f4;
+}
+
+.btn-encriptar:hover {
+    background-color: #072a54;
+    transform: scale(1.05); 
+}
+
+.btn-desencriptar {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.btn-desencriptar:hover {
+    background-color: #333;
+    transform: scale(1.05); 
+}
+
+/* Estilos de la sección 2 */
+.seccion2 {
+    width: 90%;
+    max-width: 800px; 
+    margin: 20px auto;
+    background-color: #2c2c2c;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+/* Estilos del contenedor de la imagen del muñeco */
+.contenedormunieco img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilos del contenedor de párrafo */
+.contenedor-parrafo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedor-parrafo h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f4f4f4;
+}
+
+.contenedor-parrafo p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Estilos del contenedor de resultados */
+.contenedor-resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.contenedor-resultado p {
+    color: #f4f4f4;
+    font-size: 1.2rem;
+}
+
+/* Estilos del contenedor para el botón de copiar */
+.contenedor-copiar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-copiar {
+    width: 100%;
+    max-width: 328px;
+    height: 50px;
+    border-radius: 24px;
+    background-color: #444;
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.btn-copiar:hover {
+    background-color: #333;
+    transform: scale(1.05); 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contenedorcajatexto {
+        height: auto;
+    }
+
+    .cajatexto {
+        height: 150px;
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
